@@ -88,4 +88,7 @@ theme: academia
 
 # Deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:qw-nb/qw-nb.github.io.git
+  branch: master
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
