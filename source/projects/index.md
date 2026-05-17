@@ -23,5 +23,5 @@ The central goal of QAWS is to achieve **rigorously O(N³)-scaling electronic st
 ### Key Ingredients
 
 - **Block tensor decomposition** / **tensor hypercontraction (THC)**: Compress two-electron integral tensors for O(N³) scaling
-- **xtensor**: In-house C++ tensor algebra library
+- **xtensor** (open source): In-house C++ tensor algebra library with Einstein summation — [see blog post](/2026/05/17/xtensor/) for details
 - **xint**: In-house electron integral engine
