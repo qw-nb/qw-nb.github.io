@@ -1,0 +1,51 @@
+# hexo-theme-academia configuration for Yueyang Zhang
+
+favicon: /img/favicon.png
+avatar: /img/avatar.jpg
+
+author: 'Yueyang Zhang'
+author_bio: 'PhD Candidate in Theoretical Chemistry, Xiamen University (XMU). Research on low-rank tensor decomposition for large-scale GW calculations, energy decomposition analysis, and electronic structure theory.'
+
+since: 2020
+
+# Top Menu
+menu:
+  Home: /
+  Publications: /publications/
+  Projects: /projects/
+  About: /about/
+
+loading_bg:
+  flink: /img/profile.png
+
+# Social Links
+social:
+  enable: true
+social_links:
+  fab fa-github: https://github.com/qw-nb
+  fas fa-envelope: mailto:1411469499@qq.com
+
+# Additional social links
+e_social:
+  enable: false
+e_social_links:
+
+# CV download link
+cv_dl:
+  enable: false
+  dir: /attaches/CV.pdf
+  description: My Detail CV.
+
+# Box-shadow
+box_shadow:
+  enable: false
+
+# CDN
+CDN_USE:
+  css:
+    - /css/index.css
+    - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css
+  js:
+    - https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+    - https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js
+    - /js/main.js

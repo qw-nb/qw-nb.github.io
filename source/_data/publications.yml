@@ -1,0 +1,39 @@
+- title: "Formal O(N) scaling GW calculations by block tensor decomposition for large molecule systems"
+  authors: "Yueyang Zhang, et al."
+  journal: "The Journal of Chemical Physics"
+  year: 2026
+  volume: "164"
+  issue: "14"
+  doi: "10.1063/5.0319147"
+  url: "https://doi.org/10.1063/5.0319147"
+  tag: "GW"
+
+- title: "Block tensor decomposition: A dual-grid scheme with a formal O(N) scale for THC decomposition of molecular systems"
+  authors: "Yueyang Zhang, et al."
+  journal: "The Journal of Chemical Physics"
+  year: 2025
+  volume: "163"
+  issue: "17"
+  doi: "10.1063/5.0289370"
+  url: "https://doi.org/10.1063/5.0289370"
+  tag: "Tensor"
+
+- title: "Real-space energy decomposition analysis method for qualitative and quantitative interpretations"
+  authors: "Yueyang Zhang, et al."
+  journal: "The Journal of Chemical Physics"
+  year: 2024
+  volume: "161"
+  issue: "8"
+  doi: "10.1063/5.0221644"
+  url: "https://doi.org/10.1063/5.0221644"
+  tag: "EDA"
+
+- title: "Energy decomposition analysis method using density matrix formulation"
+  authors: "Yueyang Zhang, et al."
+  journal: "The Journal of Chemical Physics"
+  year: 2024
+  volume: "160"
+  issue: "17"
+  doi: "10.1063/5.0202787"
+  url: "https://doi.org/10.1063/5.0202787"
+  tag: "EDA"
