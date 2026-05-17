@@ -6,7 +6,7 @@ academia: true
 
 ## Welcome
 
-I am **Yueyang Zhang (张岳阳)**, a PhD candidate in theoretical chemistry at Xiamen University (XMU). My research focuses on developing **low-rank tensor decomposition methods** for accelerating large-scale electronic structure calculations.
+I am **Yueyang Zhang (张越洋)**, a PhD candidate in theoretical chemistry at Xiamen University (XMU). My research focuses on developing **low-rank tensor decomposition methods** for accelerating large-scale electronic structure calculations.
 
 ### Research Highlights
 

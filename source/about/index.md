@@ -4,7 +4,7 @@ date: 2026-05-17
 layout: page
 ---
 
-## Yueyang Zhang (张岳阳)
+## Yueyang Zhang (张越洋)
 
 **PhD Candidate**
 Department of Chemistry
