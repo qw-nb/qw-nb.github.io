@@ -3,7 +3,7 @@ name: Deploy Hexo to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - source
   workflow_dispatch:
 
 permissions:
@@ -28,19 +28,16 @@ jobs:
       - name: Generate static files
         run: npx hexo generate
 
-      - name: List generated files
-        run: find public -type f | sort
-
       - name: Add .nojekyll
         run: touch public/.nojekyll
 
-      - name: Deploy to master branch
+      - name: Deploy to main branch
         run: |
           cd public
           git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b tmp
+          git checkout -b main
           git add -A
           git commit -m "Deploy: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || true
-          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/qw-nb/qw-nb.github.io.git" HEAD:master
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/qw-nb/qw-nb.github.io.git" HEAD:main
