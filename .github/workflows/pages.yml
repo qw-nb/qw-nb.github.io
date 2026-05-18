@@ -9,18 +9,12 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,12 +29,18 @@ jobs:
         run: npx hexo generate
 
       - name: List generated files
-        run: ls -laR public/2026/
+        run: find public -type f | sort
+
+      - name: Add .nojekyll
+        run: touch public/.nojekyll
 
       - name: Deploy to master branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: master
-          publish_dir: ./public
-          force_orphan: true
+        run: |
+          cd public
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b tmp
+          git add -A
+          git commit -m "Deploy: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || true
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/qw-nb/qw-nb.github.io.git" HEAD:master
